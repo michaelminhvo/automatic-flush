@@ -1,6 +1,10 @@
 # automatic-flush
 An arduino project to flush toilet automatically
 
+# Summary
+
+This is an Arduino automatic flush toilet project. This is still a work in progress and only has about a dozen flushes of real life production testing. Feel free to contact me with any questions at @michaelminhvo
+
 # Equipment list (~90$ CAD)
 
 - [Arduino uno](https://amzn.to/2VSbF81)
@@ -33,7 +37,20 @@ Feedback is very important in product design. A person using this toilet needs t
 "Flushing in 4..."
 "Done"
 
+# Battery
+
+1. For prototyping, you can use a 4AA (6V) battery pack or 9V into the DC jack of the arduino. The 9V can power both the LCD and the arduino but will run out of power within hours. The 4AA lasts longer (still testing) but can barely power the LCD.
+
+2. Use a [USB battery pack](https://amzn.to/2ZTqvfk). These have 20,000 mA of power. An arduino uno board takes 10mA and an LCD takes 20mA. 20,000/30/24(hours in a day) gives approximately 27 days of use. Ditching the LCD will give you close to 3 months of usage. 
+
+# Code
+
+There are multiple files depending on which project you want to build. 
+
 # Next steps
+
+This is still a work in progress and I will update these docs. 
+
 - There's a lot of product improvements such as having "Quick flush" mode as LCD help text. 
 - Stat collection with a clock module to print out the last time toilet was flushed
 - WiFi Arduino board for statistics collection for time of day and frequency of toilet use. 
