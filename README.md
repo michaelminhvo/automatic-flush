@@ -14,15 +14,15 @@ This is an Arduino automatic flush toilet project. This is still a work in progr
 - [Chain link](https://amzn.to/2D8PVOq)
 - [Battery pack for Arduino Uno](https://amzn.to/2O2QETG)
 - [Cheap servo motor](https://amzn.to/2VScT2K)
-- isopropyl alcohol - you will need to fix the placement of the distance sensor and servo motor. Simply dab a cotton swab on the glue and it magically peels off
+- isopropyl alcohol - there will be trial and error for mounting the distance sensor and servo motor. Simply dab a cotton swab with alochol on the glue and it magically peels off.
 
-Optional more powerful motor - needs a separate power source (~40$ CAD more)
+[Optional] more powerful motor - may need a separate power source depending on your setup (~40$ CAD more)
 - [Servo motor](https://amzn.to/2BAlKj2)
 - [Battery pack for Servo motor](https://amzn.to/2ZLTr90)
 
 
 # Equipment notes
-The more expensive servo motor is optional. It's waterproof and has stronger pulling torque. The cheaper motor works fine.
+The more expensive servo motor is optional. It's waterproof and has stronger pulling torque. It sounds better when it turns. However, the cheaper motor works perfectly fine.
 
 
 # High level explanation
@@ -30,7 +30,7 @@ We use a distance sensor to detect when someone is in front of the toilet. There
 
 Sometimes the algorithm will flush too early or won't flush. For this case we added a quick flush mode where a person can hold their hand in front of the distance sensor for two seconds and the toilet will flush.
 
-Feedback is very important in product design. A person using this toilet needs to understand how to use it. The distance sensor has two round input/output sensors that look like eyes. I considered LED lights that would light up when we detected "FLUSH MODE" - but decided on a LCD panel mostly because I wanted to learn how to work with those. The LCD panel is blank when inactive, and has countdowns whenever it detects an object in front of it.
+Feedback is very important in product design. A person using this toilet needs to understand how to use it. The distance sensor has two round input/output sensors that look like eyes. There are two prototypes: 1. LED lights that light up when we detect "FLUSH MODE", and blink when it senses possible activity, 2. The LCD panel is blank when inactive, and has countdowns whenever it detects an object in front of it.
 
 "Flush mode in 4..."
 "Toilet in use"
@@ -41,7 +41,7 @@ Feedback is very important in product design. A person using this toilet needs t
 
 1. For prototyping, you can use a 4AA (6V) battery pack or 9V into the DC jack of the arduino. The 9V can power both the LCD and the arduino but will run out of power within hours. The 4AA lasts longer (still testing) but can barely power the LCD.
 
-2. Use a [USB battery pack](https://amzn.to/2ZTqvfk). These have 20,000 mA of power. An arduino uno board takes 10mA and an LCD takes 20mA. 20,000/30/24(hours in a day) gives approximately 27 days of use. Ditching the LCD will give you close to 3 months of usage. 
+2. [Recommended] Use a [40$ USB battery pack](https://amzn.to/2ZTqvfk). These have 20,000 mA of power. An arduino uno board takes 10mA and an LCD takes 20mA. 20,000/30/24(hours in a day) gives approximately 27 days of use. Ditching the LCD will give you close to 3 months of usage.
 
 # Code
 
