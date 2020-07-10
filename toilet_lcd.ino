@@ -90,6 +90,7 @@ bool isUsingToilet() {
     if (totalSeconds >= RESET_WINDOW) {
       totalSeconds = 0;
       threshholdSeconds = 0;
+      quickFlushSeconds = 0;
       lcd.clear();
     }
   }
