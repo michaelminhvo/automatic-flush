@@ -12,13 +12,12 @@ This is an Arduino automatic flush toilet project. This is still a work in progr
 - [Distance sensor](https://amzn.to/3e5MXXN)
 - [Glue gun](https://amzn.to/2O0iEaD)
 - [Chain link](https://amzn.to/2D8PVOq)
-- [Battery pack for Arduino Uno](https://amzn.to/2O2QETG)
+- [Battery pack for Arduino Uno](https://www.adafruit.com/product/1566)
 - [Cheap servo motor](https://amzn.to/2VScT2K)
 - isopropyl alcohol - there will be trial and error for mounting the distance sensor and servo motor. Simply dab a cotton swab with alochol on the glue and it magically peels off.
 
 [Optional] more powerful motor - may need a separate power source depending on your setup (~40$ CAD more)
 - [Servo motor](https://amzn.to/2BAlKj2)
-- [Battery pack for Servo motor](https://amzn.to/2ZLTr90)
 
 
 # Equipment notes
